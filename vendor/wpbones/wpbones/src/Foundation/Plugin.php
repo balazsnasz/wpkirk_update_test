@@ -454,8 +454,6 @@ class Plugin extends Container implements PluginContract
       // Check if the action is an update for a plugin
       if (/*$hook_extra['action'] == 'update' && */isset($hook_extra['plugin'])) {
         // Verify if the updated plugin is the specific one
-        print_r($hook_extra['plugin']);
-        print_r(plugin_basename($this->file));
         if ($hook_extra['plugin'] == plugin_basename($this->file)) {
           // Call the update function
           // include your own activation
