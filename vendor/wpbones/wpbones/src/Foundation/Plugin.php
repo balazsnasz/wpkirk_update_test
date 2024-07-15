@@ -448,6 +448,7 @@ class Plugin extends Container implements PluginContract
    */
   public function upgrader_post_install($response, $hook_extra, $result)
   {
+    error_log(print_r($hook_extra));
     // Check if the installation type is for a plugin
     if ($hook_extra['type'] == 'plugin') {
       // Check if the action is an update
