@@ -9,6 +9,8 @@
  * Author URI: http://undolog.com
  * Text Domain: balazs-kirk-update-test
  * Domain Path: localization
+ * GitHub Plugin URI: https://github.com/balazsnasz/wpkirk_update_test
+ * Primary Branch: main
  *
  */
 
