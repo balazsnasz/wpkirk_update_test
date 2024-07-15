@@ -448,33 +448,28 @@ class Plugin extends Container implements PluginContract
    */
   public function upgrader_post_install($response, $hook_extra, $result)
   {
-    //Array ( [plugin] => wpkirk_update_test/index.php [temp_backup] => Array ( [slug] => wpkirk_update_test [src] => D:\laragon\www\wordpress/wp-content/plugins [dir] => plugins ) )
-    print_r($result);
-    // Check if the installation type is for a plugin
-    //if ($hook_extra['type'] == 'plugin') {
-      // Check if the action is an update for a plugin
-      if (/*$hook_extra['action'] == 'update' && */isset($hook_extra['plugin'])) {
-        // Verify if the updated plugin is the specific one
-        if ($hook_extra['plugin'] == plugin_basename($this->file)) {
-          // Call the update function
-          // include your own activation
-          $updated = include_once "{$this->basePath}/plugin/updated.php";
+    // Check if the action is an update for a plugin
+    if (isset($hook_extra['plugin'])) {
+      // Verify if the updated plugin is the specific one
+      if ($hook_extra['plugin'] == plugin_basename($this->file)) {
+        // Call the update function
+        // include your own activation
+        $updated = include_once "{$this->basePath}/plugin/updated.php";
 
-          // updates/align the plugin options
-          $this->options->delta();
+        // updates/align the plugin options
+        $this->options->delta();
 
-          // migrations
-          foreach (glob("{$this->basePath}/database/migrations/*.php") as $filename) {
-            $instance = include $filename;
-          }
+        // migrations
+        foreach (glob("{$this->basePath}/database/migrations/*.php") as $filename) {
+          $instance = include $filename;
+        }
 
-          // seeders
-          foreach (glob("{$this->basePath}/database/seeders/*.php") as $filename) {
-            $instance = include $filename;
-          }
+        // seeders
+        foreach (glob("{$this->basePath}/database/seeders/*.php") as $filename) {
+          $instance = include $filename;
         }
       }
-    //}
+    }
 
     return $response;
   }
