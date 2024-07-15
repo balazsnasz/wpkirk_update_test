@@ -449,10 +449,11 @@ class Plugin extends Container implements PluginContract
   public function upgrader_post_install($response, $hook_extra, $result)
   {
     error_log(print_r($hook_extra));
+    //Array ( [plugin] => wpkirk_update_test/index.php [temp_backup] => Array ( [slug] => wpkirk_update_test [src] => D:\laragon\www\wordpress/wp-content/plugins [dir] => plugins ) )
     // Check if the installation type is for a plugin
-    if ($hook_extra['type'] == 'plugin') {
-      // Check if the action is an update
-      if ($hook_extra['action'] == 'update' && isset($hook_extra['plugin'])) {
+    //if ($hook_extra['type'] == 'plugin') {
+      // Check if the action is an update for a plugin
+      if (/*$hook_extra['action'] == 'update' && */isset($hook_extra['plugin'])) {
         // Verify if the updated plugin is the specific one
         if ($hook_extra['plugin'] == plugin_basename(__FILE__)) {
           // Call the update function
@@ -473,7 +474,7 @@ class Plugin extends Container implements PluginContract
           }
         }
       }
-    }
+    //}
 
     return $response;
   }
