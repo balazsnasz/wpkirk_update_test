@@ -6,20 +6,20 @@
  | return PluginClassName()->view( 'dashboard.index', [ 'var' => 'value' ] );
  |
 -->
-<?php use WPKirk\Models\MyPluginProducts; ?>
+<?php use BalazsKirkUpdate\Models\MyPluginProducts; ?>
 
-<div class="wp-kirk wrap wp-kirk-sample">
+<div class="balazs-kirk-update-test wrap balazs-kirk-update-test-sample">
 
   <h1 id="model">Model</h1>
 
-  <div class="wp-kirk-toc clearfix">
+  <div class="balazs-kirk-update-test-toc clearfix">
     <ul>
       <li><a href="#model">Model</a></li>
       <li><a href="#example">Example</a></li>
     </ul>
   </div>
 
-  <div class="wp-kirk-toc-content">
+  <div class="balazs-kirk-update-test-toc-content">
 
     <p>In your Plugin you may use the Database Model class instead of the <a target="_blank"
                                                                              href="https://wpbones.vercel.app/docs/DatabaseORM/query-builder">Query
@@ -27,9 +27,9 @@
     <p>To use the Model convection you need to extend the Model class:</p>
 
     <pre><code class="language-php">&lt;?php
-namespace WPKirk\Models;
+namespace BalazsKirkUpdate\Models;
 
-use WPKirk\WPBones\Database\Model;
+use BalazsKirkUpdate\WPBones\Database\Model;
 
 class MyPluginProducts extends Model
 {
@@ -46,9 +46,9 @@ class MyPluginProducts extends Model
       table name by defining a <code class="language-php inline">table</code> property on the model:</p>
 
     <pre><code class="language-php">&lt;?php
-namespace WPKirk\Models;
+namespace BalazsKirkUpdate\Models;
 
-use WPKirk\WPBones\Database\Model;
+use BalazsKirkUpdate\WPBones\Database\Model;
 
 class MyPluginProducts extends Model
 {

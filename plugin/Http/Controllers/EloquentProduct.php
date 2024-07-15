@@ -1,9 +1,9 @@
 <?php
 
-namespace WPKirk\Http\Controllers;
+namespace BalazsKirkUpdate\Http\Controllers;
 
 use Illuminate\Database\Eloquent\Model;
-use WPKirk\WPBones\Database\DB;
+use BalazsKirkUpdate\WPBones\Database\DB;
 
 class EloquentProduct extends Model
 {

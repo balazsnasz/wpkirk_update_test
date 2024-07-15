@@ -1,4 +1,4 @@
-=== WP Kirk ===
+=== Balazs Kirk Update Test ===
 Contributors: gfazioli
 Donate link: http://undolog.com
 Tags: template, wpbones

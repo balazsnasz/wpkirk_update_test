@@ -7,11 +7,11 @@
 |
 -->
 
-<div class="wp-kirk wrap wp-kirk-sample">
+<div class="balazs-kirk-update-test wrap balazs-kirk-update-test-sample">
 
   <h1>Options</h1>
 
-  <div class="wp-kirk-toc clearfix">
+  <div class="balazs-kirk-update-test-toc clearfix">
     <ul>
       <li><a href="#current-options">Current Options</a></li>
       <li><a href="#update">Update Options</a></li>
@@ -23,7 +23,7 @@
     </ul>
   </div>
 
-  <div class="wp-kirk-toc-content">
+  <div class="balazs-kirk-update-test-toc-content">
 
     <!-- Current options -->
     <hr />

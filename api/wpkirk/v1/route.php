@@ -1,6 +1,6 @@
 <?php
 
-use WPKirk\WPBones\Routing\API\Route;
+use BalazsKirkUpdate\WPBones\Routing\API\Route;
 
 // very simple example
 Route::get('/example', function () {
@@ -61,18 +61,18 @@ Route::get('/error', function () {
 });
 
 // may use the same route for different methods
-Route::get('/version', '\WPKirk\API\WPKirkV1Controller@version');
+Route::get('/version', '\BalazsKirkUpdate\API\BalazsKirkUpdateV1Controller@version');
 
-Route::post('/version', '\WPKirk\API\WPKirkV1Controller@version');
+Route::post('/version', '\BalazsKirkUpdate\API\BalazsKirkUpdateV1Controller@version');
 
 // another way to use the same route for different methods
-Route::request(['get', 'POST'], '/multiple', '\WPKirk\API\WPKirkV1Controller@multiple');
+Route::request(['get', 'POST'], '/multiple', '\BalazsKirkUpdate\API\BalazsKirkUpdateV1Controller@multiple');
 
 // controller error example
-Route::get('/error', '\WPKirk\API\WPKirkV1Controller@error');
+Route::get('/error', '\BalazsKirkUpdate\API\BalazsKirkUpdateV1Controller@error');
 
 // controller args example
-Route::get('/controller_args', '\WPKirk\API\WPKirkV1Controller@controller_args');
+Route::get('/controller_args', '\BalazsKirkUpdate\API\BalazsKirkUpdateV1Controller@controller_args');
 
 Route::get('/protected', function () {
   return 'Hello World!';

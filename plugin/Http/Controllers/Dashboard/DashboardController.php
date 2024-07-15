@@ -1,11 +1,11 @@
 <?php
 
-namespace WPKirk\Http\Controllers\Dashboard;
+namespace BalazsKirkUpdate\Http\Controllers\Dashboard;
 
-use WPKirk\Http\Controllers\Controller;
-use WPKirk\PureCSSTabs\PureCSSTabsProvider;
-use WPKirk\PureCSSSwitch\PureCSSSwitchProvider;
-use WPKirk\WPBones\Foundation\Log\Log;
+use BalazsKirkUpdate\Http\Controllers\Controller;
+use BalazsKirkUpdate\PureCSSTabs\PureCSSTabsProvider;
+use BalazsKirkUpdate\PureCSSSwitch\PureCSSSwitchProvider;
+use BalazsKirkUpdate\WPBones\Foundation\Log\Log;
 
 class DashboardController extends Controller
 {
@@ -20,9 +20,9 @@ class DashboardController extends Controller
     Log::alert('Log::alert sample');
     Log::emergency('Log::emergency sample');
 
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('dashboard.index')
-      ->withAdminStyles('wp-kirk-common')
+      ->withAdminStyles('balazs-kirk-update-test-common')
       ->withAdminStyles('prism')
       ->withAdminScripts('prism')
       ->with('kirk', 'Captain');
@@ -30,35 +30,35 @@ class DashboardController extends Controller
 
   public function secondMenu()
   {
-    return WPKirk()->view('dashboard.second')->withAdminStyles('wp-kirk-common')->withAdminScripts('wp-kirk-main');
+    return BalazsKirkUpdate()->view('dashboard.second')->withAdminStyles('balazs-kirk-update-test-common')->withAdminScripts('balazs-kirk-update-test-main');
   }
 
   public function optionsMenu()
   {
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('dashboard.options')
       ->withAdminStyles('prism')
       ->withAdminScripts('prism')
-      ->withAdminStyles('wp-kirk-common');
+      ->withAdminStyles('balazs-kirk-update-test-common');
   }
 
   public function optionsView()
   {
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('dashboard.optionsview')
       ->withAdminStyles('prism')
       ->withAdminScripts('prism')
-      ->withAdminStyles('wp-kirk-common');
+      ->withAdminStyles('balazs-kirk-update-test-common');
   }
 
   public function html()
   {
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('dashboard.html')
-      ->withAdminStyles('wp-kirk-common')
+      ->withAdminStyles('balazs-kirk-update-test-common')
       ->withAdminStyles('prism')
       ->withAdminScripts('prism')
-      ->withAdminStyles('wp-kirk-dashboard');
+      ->withAdminStyles('balazs-kirk-update-test-dashboard');
   }
 
   public function package()
@@ -67,9 +67,9 @@ class DashboardController extends Controller
 
     PureCSSSwitchProvider::enqueueStyles();
 
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('dashboard.package')
-      ->withAdminStyles('wp-kirk-common')
+      ->withAdminStyles('balazs-kirk-update-test-common')
       ->withAdminStyles('prism')
       ->withAdminScripts('prism');
   }
@@ -80,24 +80,24 @@ class DashboardController extends Controller
 
     PureCSSSwitchProvider::enqueueStyles();
 
-    return WPKirk()->view('dashboard.package')->withAdminStyles('wp-kirk-common');
+    return BalazsKirkUpdate()->view('dashboard.package')->withAdminStyles('balazs-kirk-update-test-common');
   }
 
   public function saveOptions()
   {
     if ($this->request->verifyNonce('Options')) {
-      WPKirk()->options->update($this->request->getAsOptions());
+      BalazsKirkUpdate()->options->update($this->request->getAsOptions());
 
-      return WPKirk()
+      return BalazsKirkUpdate()
         ->view('dashboard.optionsview')
-        ->withAdminStyles('wp-kirk-common')
+        ->withAdminStyles('balazs-kirk-update-test-common')
         ->withAdminStyles('prism')
         ->withAdminScripts('prism')
         ->with('feedback', 'Options updated!');
     } else {
-      return WPKirk()
+      return BalazsKirkUpdate()
         ->view('dashboard.optionsview')
-        ->withAdminStyles('wp-kirk-common')
+        ->withAdminStyles('balazs-kirk-update-test-common')
         ->withAdminStyles('prism')
         ->withAdminScripts('prism')
         ->with('feedback', 'Action Not Allowed!');
@@ -106,9 +106,9 @@ class DashboardController extends Controller
 
   public function customPage()
   {
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('dashboard.first_custom_page')
-      ->withAdminStyles('wp-kirk-common')
+      ->withAdminStyles('balazs-kirk-update-test-common')
       ->withAdminStyles('prism')
       ->withAdminScripts('prism')
       ->with('method', $this->request->method);
@@ -116,9 +116,9 @@ class DashboardController extends Controller
 
   public function secondCustomPage()
   {
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('dashboard.second_custom_page')
-      ->withAdminStyles('wp-kirk-common')
+      ->withAdminStyles('balazs-kirk-update-test-common')
       ->withAdminStyles('prism')
       ->withAdminScripts('prism')
       ->with('method', $this->request->method);

@@ -6,20 +6,20 @@
  | return PluginClassName()->view( 'dashboard.index', [ 'var' => 'value' ] );
  |
 -->
-<?php use WPKirk\WPBones\Database\DB; ?>
+<?php use BalazsKirkUpdate\WPBones\Database\DB; ?>
 
-<div class="wp-kirk wrap wp-kirk-sample">
+<div class="balazs-kirk-update-test wrap balazs-kirk-update-test-sample">
 
   <h1>Database</h1>
 
-  <div class="wp-kirk-toc clearfix">
+  <div class="balazs-kirk-update-test-toc clearfix">
     <ul>
       <li><a href="#query-builder">Query Builder</a></li>
       <li><a href="#example">Example</a></li>
     </ul>
   </div>
 
-  <div class="wp-kirk-toc-content">
+  <div class="balazs-kirk-update-test-toc-content">
 
     <h2 id="query-builder">Query Builder</h2>
 

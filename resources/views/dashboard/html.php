@@ -7,11 +7,11 @@
  |
 -->
 
-<div class="wp-kirk wrap wp-kirk-sample">
+<div class="balazs-kirk-update-test wrap balazs-kirk-update-test-sample">
 
   <h1>HTML Tags Support</h1>
 
-  <div class="wp-kirk-toc clearfix">
+  <div class="balazs-kirk-update-test-toc clearfix">
     <ul>
       <li><a href="#facade">Html facade</a></li>
       <li><a href="#fluent">Fluent Example</a></li>
@@ -28,7 +28,7 @@
     </ul>
   </div>
 
-  <div class="wp-kirk-toc-content">
+  <div class="balazs-kirk-update-test-toc-content">
 
     <p>Here you'll find some example about HTML support.</p>
 
@@ -36,33 +36,33 @@
 
     <p>You can render a HTML component in different ways</p>
 
-    <pre><code class="language-php">echo WPKirk\Html::button( "Hello, world!" );</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::button( "Hello, world!" );</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::button('Hello, world!'); ?>
+      <?php echo BalazsKirkUpdate\Html::button('Hello, world!'); ?>
     </div>
 
     <hr />
 
     <h2 id="fluent">Fluent Example</h2>
 
-    <pre><code class="language-php">$html = WPKirk\Html::button( "Hello, world!" )->html();
+    <pre><code class="language-php">$html = BalazsKirkUpdate\Html::button( "Hello, world!" )->html();
 echo $html;</code></pre>
 
 
     <div>
       <?php
-      $html = WPKirk\Html::button('Hello, world!')->html();
+      $html = BalazsKirkUpdate\Html::button('Hello, world!')->html();
       echo $html;
       ?>
     </div>
 
     <p>By explicit <code class="language-php inline">render()</code> method</p>
 
-    <pre><code class="language-php">WPKirk\Html::button( "Hello, world!" )->render();</code></pre>
+    <pre><code class="language-php">BalazsKirkUpdate\Html::button( "Hello, world!" )->render();</code></pre>
 
     <div>
-      <?php WPKirk\Html::button('Hello, world!')->render(); ?>
+      <?php BalazsKirkUpdate\Html::button('Hello, world!')->render(); ?>
     </div>
 
     <hr />
@@ -70,13 +70,13 @@ echo $html;</code></pre>
     <h2>Attributes</h2>
     <p>You can use the attributes in several ways</p>
 
-    <pre><code class="language-php">$button = WPKirk\Html::button( "Hello, world!" );
+    <pre><code class="language-php">$button = BalazsKirkUpdate\Html::button( "Hello, world!" );
 $button->class = 'button button-primary';
 echo $button;</code></pre>
 
     <div>
       <?php
-      $button = WPKirk\Html::button('Hello, world!');
+      $button = BalazsKirkUpdate\Html::button('Hello, world!');
       $button->class = 'button button-primary';
       echo $button;
       ?>
@@ -84,33 +84,33 @@ echo $button;</code></pre>
 
     <p>Of course, you may use the fluent way</p>
 
-    <pre><code class="language-php">echo WPKirk\Html::button( "Hello, world!" )->class( 'button' );</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::button( "Hello, world!" )->class( 'button' );</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::button('Hello, world!')->class('button'); ?>
+      <?php echo BalazsKirkUpdate\Html::button('Hello, world!')->class('button'); ?>
     </div>
 
-    <pre><code class="language-php">echo WPKirk\Html::button( "Hello, world!" )->class( 'button button-primary’);</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::button( "Hello, world!" )->class( 'button button-primary’);</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::button('Hello, world!')->class(
+      <?php echo BalazsKirkUpdate\Html::button('Hello, world!')->class(
         'button button-primary'
       ); ?>
     </div>
 
-    <pre><code class="language-php">echo WPKirk\Html::button( "Hello, world!" )->class( [ 'button', 'button-primary' ] );</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::button( "Hello, world!" )->class( [ 'button', 'button-primary' ] );</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::button('Hello, world!')->class([
+      <?php echo BalazsKirkUpdate\Html::button('Hello, world!')->class([
         'button',
         'button-primary',
       ]); ?>
     </div>
 
-    <pre><code class="language-php">echo WPKirk\Html::button( [ 'content' => "Hello, world!", 'class' => 'button button-hero' ] );</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::button( [ 'content' => "Hello, world!", 'class' => 'button button-hero' ] );</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::button([
+      <?php echo BalazsKirkUpdate\Html::button([
         'content' => 'Hello, world!',
         'class' => 'button button-hero',
       ]); ?>
@@ -122,16 +122,16 @@ echo $button;</code></pre>
 
     <p>You may change the HTML component styles immediately by using <code class="language-php inline">style()</code></p>
 
-    <pre><code class="language-php">echo WPKirk\Html::button("Hello, world!")->style('color', 'red')</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::button("Hello, world!")->style('color', 'red')</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::button('Hello, world!')->style('color', 'red'); ?>
+      <?php echo BalazsKirkUpdate\Html::button('Hello, world!')->style('color', 'red'); ?>
     </div>
 
-    <pre><code class="language-php">echo WPKirk\Html::button("Hello, world!")->style('color', 'red', 'font-weight', 'bold')</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::button("Hello, world!")->style('color', 'red', 'font-weight', 'bold')</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::button('Hello, world!')->style(
+      <?php echo BalazsKirkUpdate\Html::button('Hello, world!')->style(
         'color',
         'red',
         'font-weight',
@@ -139,10 +139,10 @@ echo $button;</code></pre>
       ); ?>
     </div>
 
-    <pre><code class="language-php">echo WPKirk\Html::button("Hello, world!")->style([ 'background-color' => 'red', 'color' => 'white' ])</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::button("Hello, world!")->style([ 'background-color' => 'red', 'color' => 'white' ])</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::button('Hello, world!')->style([
+      <?php echo BalazsKirkUpdate\Html::button('Hello, world!')->style([
         'background-color' => 'red',
         'color' => 'white',
       ]); ?>
@@ -154,20 +154,20 @@ echo $button;</code></pre>
 
     <h3>a</h3>
 
-    <pre><code class="language-php">echo WPKirk\Html::a('Click me')->href('http://undolog.com')</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::a('Click me')->href('http://undolog.com')</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::a('Click me')->href('http://undolog.com'); ?>
+      <?php echo BalazsKirkUpdate\Html::a('Click me')->href('http://undolog.com'); ?>
     </div>
 
     <hr />
 
     <h3 id="button">button</h3>
 
-    <pre><code class="language-php">echo WPKirk\Html::button('Hello, world!')->class('button button-primary')</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::button('Hello, world!')->class('button button-primary')</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::button('Hello, world!')->class(
+      <?php echo BalazsKirkUpdate\Html::button('Hello, world!')->class(
         'button button-primary'
       ); ?>
     </div>
@@ -176,30 +176,30 @@ echo $button;</code></pre>
 
     <h3 id="form">Form</h3>
 
-    <pre><code class="language-php">echo WPKirk\Html::form()->acceptcharset('ISO-8859-1')</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::form()->acceptcharset('ISO-8859-1')</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::form()->acceptcharset('ISO-8859-1'); ?>
+      <?php echo BalazsKirkUpdate\Html::form()->acceptcharset('ISO-8859-1'); ?>
     </div>
 
     <hr />
 
     <h3 id="input">Input</h3>
 
-    <pre><code class="language-php">echo WPKirk\Html::input()->type('text')->value('Hello')</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::input()->type('text')->value('Hello')</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::input()->type('text')->value('Hello'); ?>
+      <?php echo BalazsKirkUpdate\Html::input()->type('text')->value('Hello'); ?>
     </div>
 
     <hr />
 
     <h3 id="checkbox">Checkbox</h3>
 
-    <pre><code class="language-php">echo WPKirk\Html::checkbox()->name('myname')->value('Hello')</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::checkbox()->name('myname')->value('Hello')</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::checkbox()->name('myname')->value('Hello'); ?>
+      <?php echo BalazsKirkUpdate\Html::checkbox()->name('myname')->value('Hello'); ?>
     </div>
 
     <p>The HTML markup output consists in two input fields in order to support the unchecked value as well</p>
@@ -216,18 +216,18 @@ echo $button;</code></pre>
       The first
       one is using the <code class="language-html inline">option</code> component</p>
 
-    <pre><code class="language-php">echo WPKirk\Html::select(WPKirk\Html::option('Item')->html())</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::select(BalazsKirkUpdate\Html::option('Item')->html())</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::select(WPKirk\Html::option('Item')->html()); ?>
+      <?php echo BalazsKirkUpdate\Html::select(BalazsKirkUpdate\Html::option('Item')->html()); ?>
     </div>
 
     <p>You may use also <code class="language-html inline">options</code> fluent way</p>
 
-    <pre><code class="language-php">echo WPKirk\Html::select()->options([ 'Item 1', 'Item 2' ])</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::select()->options([ 'Item 1', 'Item 2' ])</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::select()->options(['Item 1', 'Item 2']); ?>
+      <?php echo BalazsKirkUpdate\Html::select()->options(['Item 1', 'Item 2']); ?>
     </div>
 
     <pre><code class="language-html">&lt;select&gt;
@@ -237,10 +237,10 @@ echo $button;</code></pre>
 
     <p>Options with array keys</p>
 
-    <pre><code class="language-php">echo WPKirk\Html::select()->options([ 'item-1' => 'Item 1', 'item-2' => 'Item 2' ])</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::select()->options([ 'item-1' => 'Item 1', 'item-2' => 'Item 2' ])</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::select()->options([
+      <?php echo BalazsKirkUpdate\Html::select()->options([
         'item-1' => 'Item 1',
         'item-2' => 'Item 2',
       ]); ?>
@@ -254,10 +254,10 @@ echo $button;</code></pre>
 
     <p>Preselect an option</p>
 
-    <pre><code class="language-php">echo WPKirk\Html::select()->options([ 'item-4' => 'Item 4', 'item-5' => 'Item 5'])->selected('item-5')</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::select()->options([ 'item-4' => 'Item 4', 'item-5' => 'Item 5'])->selected('item-5')</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::select()
+      <?php echo BalazsKirkUpdate\Html::select()
         ->options(['item-4' => 'Item 4', 'item-5' => 'Item 5'])
         ->selected('item-5'); ?>
     </div>
@@ -266,10 +266,10 @@ echo $button;</code></pre>
 
     <h3 id="textarea">Textarea</h3>
 
-    <pre><code class="language-php">echo WPKirk\Html::textarea('Hi there, How are you?')</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::textarea('Hi there, How are you?')</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::textarea('Hi there, How are you?'); ?>
+      <?php echo BalazsKirkUpdate\Html::textarea('Hi there, How are you?'); ?>
     </div>
 
     <hr />
@@ -278,27 +278,27 @@ echo $button;</code></pre>
 
     <div>
 
-      <pre><code class="language-php">echo WPKirk\Html::datetime([ 'name' => 'finalStart' ])</code></pre>
+      <pre><code class="language-php">echo BalazsKirkUpdate\Html::datetime([ 'name' => 'finalStart' ])</code></pre>
 
-      <?php echo WPKirk\Html::datetime(['name' => 'finalStart']); ?>
+      <?php echo BalazsKirkUpdate\Html::datetime(['name' => 'finalStart']); ?>
 
-      <pre><code class="language-php">echo WPKirk\Html::datetime()->complete(true)</code></pre>
-      <?php echo WPKirk\Html::datetime()->complete(true); ?>
+      <pre><code class="language-php">echo BalazsKirkUpdate\Html::datetime()->complete(true)</code></pre>
+      <?php echo BalazsKirkUpdate\Html::datetime()->complete(true); ?>
 
-      <pre><code class="language-php">echo WPKirk\Html::datetime()->value('now')</code></pre>
-      <?php echo WPKirk\Html::datetime()->value('now'); ?>
+      <pre><code class="language-php">echo BalazsKirkUpdate\Html::datetime()->value('now')</code></pre>
+      <?php echo BalazsKirkUpdate\Html::datetime()->value('now'); ?>
 
-      <pre><code class="language-php">echo WPKirk\Html::datetime()->now(true)</code></pre>
-      <?php echo WPKirk\Html::datetime()->now(true); ?>
+      <pre><code class="language-php">echo BalazsKirkUpdate\Html::datetime()->now(true)</code></pre>
+      <?php echo BalazsKirkUpdate\Html::datetime()->now(true); ?>
 
-      <pre><code class="language-php">echo WPKirk\Html::datetime()->now(true)->clear(true)</code></pre>
-      <?php echo WPKirk\Html::datetime()->now(true)->clear(true); ?>
+      <pre><code class="language-php">echo BalazsKirkUpdate\Html::datetime()->now(true)->clear(true)</code></pre>
+      <?php echo BalazsKirkUpdate\Html::datetime()->now(true)->clear(true); ?>
 
-      <pre><code class="language-php">echo WPKirk\Html::datetime()->value(time() + (60 * 60))</code></pre>
-      <?php echo WPKirk\Html::datetime()->value(time() + 60 * 60); ?>
+      <pre><code class="language-php">echo BalazsKirkUpdate\Html::datetime()->value(time() + (60 * 60))</code></pre>
+      <?php echo BalazsKirkUpdate\Html::datetime()->value(time() + 60 * 60); ?>
 
-      <pre><code class="language-php">echo WPKirk\Html::datetime()->value("2015-11-10 12:13")</code></pre>
-      <?php echo WPKirk\Html::datetime()->value('2015-11-10 12:13'); ?>
+      <pre><code class="language-php">echo BalazsKirkUpdate\Html::datetime()->value("2015-11-10 12:13")</code></pre>
+      <?php echo BalazsKirkUpdate\Html::datetime()->value('2015-11-10 12:13'); ?>
     </div>
 
     <hr />
@@ -307,10 +307,10 @@ echo $button;</code></pre>
 
     <p>You may also set any custom attributes in the HTML component</p>
 
-    <pre><code class="language-php">echo WPKirk\Html::button('Click me!')->attributes('hello', 'world')</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\Html::button('Click me!')->attributes('hello', 'world')</code></pre>
 
     <div>
-      <?php echo WPKirk\Html::button('Click me!')->attributes(
+      <?php echo BalazsKirkUpdate\Html::button('Click me!')->attributes(
         'hello',
         'world'
       ); ?>

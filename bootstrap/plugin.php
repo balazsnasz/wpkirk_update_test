@@ -13,8 +13,8 @@ if (! defined('ABSPATH')) {
 | which serves as the "glue" for all the components.
 |
 */
-if (class_exists('\WPKirk\WPBones\Foundation\Plugin')) {
-    $plugin = new \WPKirk\WPBones\Foundation\Plugin(
+if (class_exists('\BalazsKirkUpdate\WPBones\Foundation\Plugin')) {
+    $plugin = new \BalazsKirkUpdate\WPBones\Foundation\Plugin(
         realpath(__DIR__ . '/../')
     );
 
@@ -32,7 +32,7 @@ if (class_exists('\WPKirk\WPBones\Foundation\Plugin')) {
     /**
      * Fire when the plugin is loaded
      */
-    do_action('wp-kirk_loaded');
+    do_action('balazs-kirk-update-test_loaded');
 
     return $plugin;
 }

@@ -10,8 +10,8 @@
     value="<?php echo $instance['title']; ?>" />
 </p>
 
-<?php WPKirk::$plugin->log()->info('Widget args backend', $instance); ?>
+<?php BalazsKirkUpdate::$plugin->log()->info('Widget args backend', $instance); ?>
 
 <h3><?php echo $plugin->Name; ?>
 </h3>
-<?php echo WPKirk\Html::button('Click Me!');
+<?php echo BalazsKirkUpdate\Html::button('Click Me!');

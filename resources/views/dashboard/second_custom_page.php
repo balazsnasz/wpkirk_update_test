@@ -7,7 +7,7 @@
  |
 -->
 
-<div class="wp-kirk wrap">
+<div class="balazs-kirk-update-test wrap">
   <h1>Hello, I'm a the second Custom Page without menu</h1>
 
   <pre><code class="language-php">Current Method <?php echo !isset($method) ?:

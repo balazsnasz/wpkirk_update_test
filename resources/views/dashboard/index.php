@@ -7,11 +7,11 @@
  |
 -->
 
-<div class="wp-kirk wrap wp-kirk-sample">
+<div class="balazs-kirk-update-test wrap balazs-kirk-update-test-sample">
 
   <h1>Hello, I'm the first <?php echo $plugin->Name; ?> view</h1>
 
-  <div class="wp-kirk-toc clearfix">
+  <div class="balazs-kirk-update-test-toc clearfix">
     <ul>
       <li><a href="#passing-data">Passing data to view</a></li>
       <li><a href="#configuration">Configuration</a></li>
@@ -20,7 +20,7 @@
     </ul>
   </div>
 
-  <div class="wp-kirk-toc-content">
+  <div class="balazs-kirk-update-test-toc-content">
     <h2>Welcome to the WP Bones template WordPress plugin</h2>
     <p>This is a simple template plugin for WordPress. It is based on the WP Bones framework.</p>
     <p>It is a  plugin that shows most of the features of the WP Bones framework. It is a good starting point for creating your own plugin.</p>

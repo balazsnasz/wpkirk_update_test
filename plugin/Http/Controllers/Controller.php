@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\Http\Controllers;
+namespace BalazsKirkUpdate\Http\Controllers;
 
-use WPKirk\WPBones\Routing\Controller as BaseController;
+use BalazsKirkUpdate\WPBones\Routing\Controller as BaseController;
 
 abstract class Controller extends BaseController
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\Http\Controllers;
+namespace BalazsKirkUpdate\Http\Controllers;
 
-use WPKirk\Http\Controllers\EloquentUser as User;
+use BalazsKirkUpdate\Http\Controllers\EloquentUser as User;
 
 class ExampleBladeController extends Controller
 {
@@ -11,19 +11,19 @@ class ExampleBladeController extends Controller
 
     $controller = <<<'EOT'
     <?php
-    namespace WPKirk\Http\Controllers;
+    namespace BalazsKirkUpdate\Http\Controllers;
 
-    use WPKirk\Http\Controllers\EloquentUser as User;
+    use BalazsKirkUpdate\Http\Controllers\EloquentUser as User;
 
     class ExampleBladeController extends Controller
     {
         public function index()
         {
-            return WPKirk()
+            return BalazsKirkUpdate()
               ->view('blade.demo', ['users' => User::all()])
               ->withAdminStyles('prism')
               ->withAdminScripts('prism')
-              ->withAdminStyles('wp-kirk-common');
+              ->withAdminStyles('balazs-kirk-update-test-common');
         }
     }
     EOT;
@@ -34,10 +34,10 @@ class ExampleBladeController extends Controller
  @endforeach';
 
 
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('blade.demo', ['users' => User::all(), 'code' => $code, 'controller' => $controller])
       ->withAdminStyles('prism')
       ->withAdminScripts('prism')
-      ->withAdminStyles('wp-kirk-common');
+      ->withAdminStyles('balazs-kirk-update-test-common');
   }
 }

@@ -6,11 +6,11 @@
   <?php
 //echo $args['after_title']
 ?>
-  <h3 class="wp-kirk-widget-title"><?php echo $plugin->Name; ?>
+  <h3 class="balazs-kirk-update-test-widget-title"><?php echo $plugin->Name; ?>
   </h3>
 
-  <?php WPKirk::$plugin->log()->info('Widget args frontend', $args); ?>
+  <?php BalazsKirkUpdate::$plugin->log()->info('Widget args frontend', $args); ?>
 
   </pre>
-  <?php echo WPKirk\Html::button('Click Me!'); ?>
+  <?php echo BalazsKirkUpdate\Html::button('Click Me!'); ?>
 </div>

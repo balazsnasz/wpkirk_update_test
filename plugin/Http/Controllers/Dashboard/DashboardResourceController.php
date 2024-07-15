@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\Http\Controllers\Dashboard;
+namespace BalazsKirkUpdate\Http\Controllers\Dashboard;
 
-use WPKirk\Http\Controllers\Controller;
+use BalazsKirkUpdate\Http\Controllers\Controller;
 
 class DashboardResourceController extends Controller
 {
@@ -17,19 +17,19 @@ class DashboardResourceController extends Controller
   // GET
   public function index()
   {
-    return WPKirk()->view('dashboard.optionsresview')->with('method', 'GET');
+    return BalazsKirkUpdate()->view('dashboard.optionsresview')->with('method', 'GET');
   }
 
   // POST
   public function store()
   {
-    return WPKirk()->view('dashboard.optionsresview')->with('method', 'POST');
+    return BalazsKirkUpdate()->view('dashboard.optionsresview')->with('method', 'POST');
   }
 
   // PUT AND PATCH
   public function update()
   {
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('dashboard.optionsresview')
       ->with('method', 'PUT AND PATCH');
   }
@@ -37,6 +37,6 @@ class DashboardResourceController extends Controller
   // DELETE
   public function destroy()
   {
-    return WPKirk()->view('dashboard.optionsresview')->with('method', 'DELETE');
+    return BalazsKirkUpdate()->view('dashboard.optionsresview')->with('method', 'DELETE');
   }
 }

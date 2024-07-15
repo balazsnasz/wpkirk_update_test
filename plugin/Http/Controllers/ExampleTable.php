@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\Http\Controllers;
+namespace BalazsKirkUpdate\Http\Controllers;
 
-use WPKirk\WPTables\Html\WPTable;
+use BalazsKirkUpdate\WPTables\Html\WPTable;
 
 class ExampleTable extends WPTable
 {

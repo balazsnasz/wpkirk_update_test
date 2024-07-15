@@ -1,4 +1,4 @@
-<div class="wp-kirk wrap wp-kirk-sample">
+<div class="balazs-kirk-update-test wrap balazs-kirk-update-test-sample">
 
   <h1>Demo Blade</h1>
 

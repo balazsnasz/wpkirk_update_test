@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\CustomTaxonomyTypes;
+namespace BalazsKirkUpdate\CustomTaxonomyTypes;
 
-use WPKirk\WPBones\Foundation\WordPressCustomTaxonomyTypeServiceProvider as ServiceProvider;
+use BalazsKirkUpdate\WPBones\Foundation\WordPressCustomTaxonomyTypeServiceProvider as ServiceProvider;
 
 class MyCustomTaxonomy extends ServiceProvider
 {

@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Plugin Name: WP Kirk
- * Plugin URI: https://github.com/wpbones/WPKirk
+ * Plugin Name: Balazs Kirk Update Test
+ * Plugin URI: https://github.com/wpbones/BalazsKirkUpdate
  * Description: WP Bones template WordPress plugin
  * Version: 1.4.11
  * Author: Giovambattista Fazioli
  * Author URI: http://undolog.com
- * Text Domain: wp-kirk
+ * Text Domain: balazs-kirk-update-test
  * Domain Path: localization
  *
  */

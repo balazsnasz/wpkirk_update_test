@@ -11,7 +11,7 @@
 */
 
 return [
-  'wp_kirk_slug_menu' => [
+  'balazs_kirk_update_test_slug_menu' => [
     'menu_title' => 'WP Kirk Menu',
     'capability' => 'read',
     'icon' => 'wpbones-logo-menu.png',

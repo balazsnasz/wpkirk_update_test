@@ -1,7 +1,7 @@
 <?php
 
-use WPKirk\Models\MyPluginProducts;
-use WPKirk\WPBones\Database\Seeder;
+use BalazsKirkUpdate\Models\MyPluginProducts;
+use BalazsKirkUpdate\WPBones\Database\Seeder;
 
 return new class extends Seeder {
   /**

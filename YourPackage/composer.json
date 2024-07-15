@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "WPKirk\\YourPackage\\": "src/"
+      "BalazsKirkUpdate\\YourPackage\\": "src/"
     }
   },
   "minimum-stability": "stable",

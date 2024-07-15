@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\Ajax;
+namespace BalazsKirkUpdate\Ajax;
 
-use WPKirk\WPBones\Foundation\WordPressAjaxServiceProvider as ServiceProvider;
+use BalazsKirkUpdate\WPBones\Foundation\WordPressAjaxServiceProvider as ServiceProvider;
 
 class MyAjax extends ServiceProvider
 {

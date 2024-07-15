@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\Models;
+namespace BalazsKirkUpdate\Models;
 
-use WPKirk\WPBones\Database\Model;
+use BalazsKirkUpdate\WPBones\Database\Model;
 
 class MyPluginProducts extends Model
 {

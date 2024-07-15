@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\Console\Commands;
+namespace BalazsKirkUpdate\Console\Commands;
 
-use WPKirk\WPBones\Console\Command;
+use BalazsKirkUpdate\WPBones\Console\Command;
 
 class SampleCommand extends Command
 {

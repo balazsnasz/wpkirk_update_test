@@ -7,14 +7,14 @@
  |
 -->
 
-<div class="wp-kirk wrap">
+<div class="balazs-kirk-update-test wrap">
   <h1>Hello, I'm a Custom Page defined in <code class="language- inline">pages</code> folder</h1>
 
   <p>You may create a PHP file in <code class="language- inline">pages</code> folder and name it <code class="language- inline">custom_page.php</code>.</p>
 
   <pre><code class="language-php">&lt;?php
 
-use WPKirk\WPBones\Routing\Pages\Support\Page;
+use BalazsKirkUpdate\WPBones\Routing\Pages\Support\Page;
 
 class CustomPage extends Page
 {
@@ -29,7 +29,7 @@ class CustomPage extends Page
         ->view('dashboard.custom_page')
         ->withAdminStyles('prism')
         ->withAdminScripts('prism')
-        ->withAdminStyles('wp-kirk-common');
+        ->withAdminStyles('balazs-kirk-update-test-common');
     }
 }</code></pre>
 

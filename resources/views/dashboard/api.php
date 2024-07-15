@@ -12,11 +12,11 @@ if (!defined('ABSPATH')) {
 |
 -->
 
-<div class="wp-kirk wrap wp-kirk-sample">
+<div class="balazs-kirk-update-test wrap balazs-kirk-update-test-sample">
 
   <h1>API</h1>
 
-  <div class="wp-kirk-toc clearfix">
+  <div class="balazs-kirk-update-test-toc clearfix">
     <ul>
       <li><a href="#rest-api">REST API</a></li>
       <li><a href="#routing">Routing</a></li>
@@ -24,7 +24,7 @@ if (!defined('ABSPATH')) {
     </ul>
   </div>
 
-  <div class="wp-kirk-toc-content">
+  <div class="balazs-kirk-update-test-toc-content">
 
     <!-- Current options -->
     <hr />
@@ -50,7 +50,7 @@ if (!defined('ABSPATH')) {
     <p>Let's see a simple implementation of <code class="language- inline">route.php</code></p>
 
     <pre><code class="language-php">&lt;?php
-    use WPKirk\WPBones\Routing\API\Route;
+    use BalazsKirkUpdate\WPBones\Routing\API\Route;
 
     Route::get('/example', function () {
         return 'Hello World!';
@@ -69,7 +69,7 @@ if (!defined('ABSPATH')) {
     <p>Let's see a simple implementation of <code class="language- inline">route.php</code> using the <code class="language- inline">post</code> method</p>
 
     <pre><code class="language-php">&lt;?php
-    use WPKirk\WPBones\Routing\API\Route;
+    use BalazsKirkUpdate\WPBones\Routing\API\Route;
 
     Route::post('/example', function () {
         return 'Hello World!';
@@ -83,7 +83,7 @@ if (!defined('ABSPATH')) {
     <p>Let's see a simple implementation of <code class="language- inline">route.php</code> using the <code class="language- inline">::request()</code> method</p>
 
     <pre><code class="language-php">&lt;?php
-    use WPKirk\WPBones\Routing\API\Route;
+    use BalazsKirkUpdate\WPBones\Routing\API\Route;
 
     Route::request('get', '/get_request', function () {
         return 'Hello World!';

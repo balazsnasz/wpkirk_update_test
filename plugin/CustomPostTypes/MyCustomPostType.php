@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\CustomPostTypes;
+namespace BalazsKirkUpdate\CustomPostTypes;
 
-use WPKirk\WPBones\Foundation\WordPressCustomPostTypeServiceProvider as ServiceProvider;
+use BalazsKirkUpdate\WPBones\Foundation\WordPressCustomPostTypeServiceProvider as ServiceProvider;
 
 class MyCustomPostType extends ServiceProvider
 {

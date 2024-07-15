@@ -7,11 +7,11 @@
  |
 -->
 
-<div class="wp-kirk wrap wp-kirk-sample">
+<div class="balazs-kirk-update-test wrap balazs-kirk-update-test-sample">
 
   <h1>Assets</h1>
 
-  <div class="wp-kirk-toc clearfix">
+  <div class="balazs-kirk-update-test-toc clearfix">
     <ul>
       <li><a href="#styles">Styles</a></li>
       <li><a href="#javascript">Javascript</a></li>
@@ -19,7 +19,7 @@
     </ul>
   </div>
 
-  <div class="wp-kirk-toc-content">
+  <div class="balazs-kirk-update-test-toc-content">
     <h2>Assets</h2>
 
     <p>WP Bones provides a simple way to include assets in your plugin. You can include styles and scripts in the admin area and in the public area.</p>
@@ -33,7 +33,7 @@
 
     <pre><code class="language-php">public function assets()
 {
-  return WPKirk()
+  return BalazsKirkUpdate()
     ->view('dashboard.assets')
     ->withAdminStyles('my-styles');
   }</code></pre>
@@ -61,9 +61,9 @@
 
   <pre><code class="language-php">public function assets()
 {
-return WPKirk()
+return BalazsKirkUpdate()
   ->view('dashboard.assets')
-  ->withAdminStyles('wp-kirk-common')
+  ->withAdminStyles('balazs-kirk-update-test-common')
   ->withAdminStyles('prism')
   ->withAdminScripts('prism')
   ->withAdminScripts('wp-react-component', ['wp-element']); // wp-element is a dependency

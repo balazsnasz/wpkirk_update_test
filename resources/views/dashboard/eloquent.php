@@ -7,11 +7,11 @@
  |
 -->
 <?php
-use WPKirk\Http\Controllers\EloquentProduct as Product;
-use WPKirk\Http\Controllers\EloquentUser as User;
+use BalazsKirkUpdate\Http\Controllers\EloquentProduct as Product;
+use BalazsKirkUpdate\Http\Controllers\EloquentUser as User;
 ?>
 
-<div class="wp-kirk wrap wp-kirk-sample">
+<div class="balazs-kirk-update-test wrap balazs-kirk-update-test-sample">
 
   <h1>Eloquent ORM</h1>
   <p>You may include the Eloquent ORM to provide a beautiful, simple ActiveRecord implementation for working with your
@@ -30,7 +30,7 @@ use WPKirk\Http\Controllers\EloquentUser as User;
   <h2>Query WordPress users table</h2>
 
   <pre><code class="language-php">&lt;?php
-  use WPKirk\Http\Controllers\User;
+  use BalazsKirkUpdate\Http\Controllers\User;
 
   var_dump(User::all());</code></pre>
 
@@ -46,7 +46,7 @@ use WPKirk\Http\Controllers\EloquentUser as User;
   <p>Of course, you'll be able to use all eloquent features</p>
 
   <pre><code class="language-php">&lt;?php
-  use WPKirk\Http\Controllers\User;
+  use BalazsKirkUpdate\Http\Controllers\User;
 
   var_dump(User::find(1)->user_email);</code></pre>
 
@@ -59,7 +59,7 @@ use WPKirk\Http\Controllers\EloquentUser as User;
   <p>Alongside the WordPress table you may use eloquent for your custom database table</p>
 
   <pre><code class="language-php">&lt;?php
-  use WPKirk\Http\Controllers\Product;
+  use BalazsKirkUpdate\Http\Controllers\Product;
 
   var_dump(Product::find([3,4]));</code></pre>
 
@@ -73,7 +73,7 @@ use WPKirk\Http\Controllers\EloquentUser as User;
   <p>and get single column value</p>
 
   <pre><code class="language-php">&lt;?php
-  use WPKirk\Http\Controllers\Product;
+  use BalazsKirkUpdate\Http\Controllers\Product;
 
   var_dump(Product::find(3)->name);</code></pre>
 
@@ -84,7 +84,7 @@ use WPKirk\Http\Controllers\EloquentUser as User;
   <h2>Loop into</h2>
 
   <pre><code class="language-php">&lt;?php
-  use WPKirk\Http\Controllers\Product;
+  use BalazsKirkUpdate\Http\Controllers\Product;
 
   Product::all()->each(function ($e) {
     var_dump($e->id);

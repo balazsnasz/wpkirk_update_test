@@ -1,15 +1,15 @@
 <?php
 
-namespace WPKirk\Http\Controllers;
+namespace BalazsKirkUpdate\Http\Controllers;
 
 class ExampleModelController extends Controller
 {
   public function index()
   {
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('dashboard.model')
       ->withAdminStyles('prism')
       ->withAdminScripts('prism')
-      ->withAdminStyles('wp-kirk-common');
+      ->withAdminStyles('balazs-kirk-update-test-common');
   }
 }

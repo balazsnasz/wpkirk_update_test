@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\Shortcodes;
+namespace BalazsKirkUpdate\Shortcodes;
 
-use WPKirk\WPBones\Foundation\WordPressShortcodesServiceProvider as ServiceProvider;
+use BalazsKirkUpdate\WPBones\Foundation\WordPressShortcodesServiceProvider as ServiceProvider;
 
 class MyShortcodes extends ServiceProvider
 {

@@ -1,17 +1,17 @@
 <?php
 
-namespace WPKirk\Http\Controllers;
+namespace BalazsKirkUpdate\Http\Controllers;
 
 class ReactApplicationController extends Controller
 {
   public function index()
   {
-    return WPKirk()->view('dashboard.react-app')->withAdminAppsScripts('app');
+    return BalazsKirkUpdate()->view('dashboard.react-app')->withAdminAppsScripts('app');
   }
 
   public function reactSettings()
   {
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('dashboard.react-app')
       ->withAdminAppsScripts('app', true, 'ReactApp', [
         'tab' => 'settings',

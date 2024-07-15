@@ -7,11 +7,11 @@
  |
 -->
 
-<div class="wp-kirk wrap">
+<div class="balazs-kirk-update-test wrap">
 
   <h1>Hello, I'm a second view</h1>
 
-  <h2><?php _e('You can localize me', 'wp-kirk'); ?></h2>
+  <h2><?php _e('You can localize me', 'balazs-kirk-update-test'); ?></h2>
 
   <button class="button-primary" id="ajax-logged">Click me for Ajax logged</button>
   <button class="button-primary" id="ajax-trusted">Click me for Ajax trusted</button>

@@ -38,7 +38,7 @@ return [
   |
   */
 
-  'custom_post_types' => ['\WPKirk\CustomPostTypes\MyCustomPostType'],
+  'custom_post_types' => ['\BalazsKirkUpdate\CustomPostTypes\MyCustomPostType'],
 
   /*
   |--------------------------------------------------------------------------
@@ -49,7 +49,7 @@ return [
   |
   */
 
-  'custom_taxonomy_types' => ['\WPKirk\CustomTaxonomyTypes\MyCustomTaxonomy'],
+  'custom_taxonomy_types' => ['\BalazsKirkUpdate\CustomTaxonomyTypes\MyCustomTaxonomy'],
 
   /*
   |--------------------------------------------------------------------------
@@ -60,7 +60,7 @@ return [
   |
   */
 
-  'shortcodes' => ['\WPKirk\Shortcodes\MyShortcodes'],
+  'shortcodes' => ['\BalazsKirkUpdate\Shortcodes\MyShortcodes'],
 
   /*
   |--------------------------------------------------------------------------
@@ -71,7 +71,7 @@ return [
   |
   */
 
-  'widgets' => ['\WPKirk\Widgets\MyWidget'],
+  'widgets' => ['\BalazsKirkUpdate\Widgets\MyWidget'],
 
   /*
   |--------------------------------------------------------------------------
@@ -82,7 +82,7 @@ return [
   |
   */
 
-  'ajax' => ['\WPKirk\Ajax\MyAjax'],
+  'ajax' => ['\BalazsKirkUpdate\Ajax\MyAjax'],
 
   /*
   |--------------------------------------------------------------------------

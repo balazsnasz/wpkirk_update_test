@@ -7,7 +7,7 @@
  |
 -->
 
-<div class="wp-kirk wrap wp-kirk-sample">
+<div class="balazs-kirk-update-test wrap balazs-kirk-update-test-sample">
 
   <h1>Options View</h1>
   <p>Here you can try the ability to handle a form for the options.</p>

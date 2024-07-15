@@ -7,7 +7,7 @@
  |
 -->
 
-<div class="wp-kirk wrap">
+<div class="balazs-kirk-update-test wrap">
   <h1>Hello, I'm a Custom Page without menu</h1>
 
   <hr />

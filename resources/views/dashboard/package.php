@@ -1,8 +1,8 @@
-<div class="wrap wp-kirk wp-kirk-sample">
+<div class="wrap balazs-kirk-update-test balazs-kirk-update-test-sample">
 
   <h2>Package sample</h2>
 
-  <div class="wp-kirk-toc clearfix">
+  <div class="balazs-kirk-update-test-toc clearfix">
     <ul>
       <li><a href="#your-package">Create Your Package</a></li>
       <li><a href="#pure-css-tabs">Pure CSS Tabs</a></li>
@@ -11,7 +11,7 @@
     </ul>
   </div>
 
-  <div class="wp-kirk-toc-content">
+  <div class="balazs-kirk-update-test-toc-content">
     <h2>Overview</h2>
 
     <p>
@@ -25,9 +25,9 @@
     <hr />
     <h2 id="your-package">Create your Package</h2>
 
-    <pre><code class="language-php">&lt;?php WPKirk\YourPackage\YourPackageProvider::yourPackageMethod(); ?&gt;</code></pre>
+    <pre><code class="language-php">&lt;?php BalazsKirkUpdate\YourPackage\YourPackageProvider::yourPackageMethod(); ?&gt;</code></pre>
 
-    <?php WPKirk\YourPackage\YourPackageProvider::yourPackageMethod(); ?>
+    <?php BalazsKirkUpdate\YourPackage\YourPackageProvider::yourPackageMethod(); ?>
 
     <hr />
     <h2 id="pure-css-tabs">Pure CSS Tabs</h2>
@@ -42,7 +42,7 @@
     <div class="wpbones-tabs">
 
       <!-- first tab -->
-      <?php WPKirk\PureCSSTabs\PureCSSTabsProvider::openTab(
+      <?php BalazsKirkUpdate\PureCSSTabs\PureCSSTabsProvider::openTab(
         'Database',
         null,
         true
@@ -52,16 +52,16 @@
         <h3>Content for Database</h3>
       </div>
 
-      <?php WPKirk\PureCSSTabs\PureCSSTabsProvider::closeTab(); ?>
+      <?php BalazsKirkUpdate\PureCSSTabs\PureCSSTabsProvider::closeTab(); ?>
 
       <!-- second tab -->
-      <?php WPKirk\PureCSSTabs\PureCSSTabsProvider::openTab('Posts'); ?>
+      <?php BalazsKirkUpdate\PureCSSTabs\PureCSSTabsProvider::openTab('Posts'); ?>
 
       <div>
         <h3>Content for Posts</h3>
       </div>
 
-      <?php WPKirk\PureCSSTabs\PureCSSTabsProvider::closeTab(); ?>
+      <?php BalazsKirkUpdate\PureCSSTabs\PureCSSTabsProvider::closeTab(); ?>
 
       <!-- son on... -->
 
@@ -72,7 +72,7 @@
 <div class="wpbones-tabs">
 
   <!-- first tab -->
-  <?php WPKirk\PureCSSTabs\PureCSSTabsProvider::openTab(
+  <?php BalazsKirkUpdate\PureCSSTabs\PureCSSTabsProvider::openTab(
     'Database',
     null,
     true
@@ -82,16 +82,16 @@
     <h3>Content for Database</h3>
   </div>
 
-  <?php WPKirk\PureCSSTabs\PureCSSTabsProvider::closeTab(); ?>
+  <?php BalazsKirkUpdate\PureCSSTabs\PureCSSTabsProvider::closeTab(); ?>
 
   <!-- second tab -->
-  <?php WPKirk\PureCSSTabs\PureCSSTabsProvider::openTab('Posts'); ?>
+  <?php BalazsKirkUpdate\PureCSSTabs\PureCSSTabsProvider::openTab('Posts'); ?>
 
   <div>
     <h3>Content for Posts</h3>
   </div>
 
-  <?php WPKirk\PureCSSTabs\PureCSSTabsProvider::closeTab(); ?>
+  <?php BalazsKirkUpdate\PureCSSTabs\PureCSSTabsProvider::closeTab(); ?>
 
   <!-- son on... -->
 
@@ -117,13 +117,13 @@ EOT;
 
     <p>The you may use</p>
 
-    <pre><code class="language-php">echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-1' ); </code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-1' ); </code></pre>
 
     <p>You may add a left label</p>
 
     <p>
-      <pre><code class="language-php">echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-2' )->left_label( 'Swipe me' ); </code></pre>
-      <?php echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
+      <pre><code class="language-php">echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-2' )->left_label( 'Swipe me' ); </code></pre>
+      <?php echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
         'test-switch-2'
       )->left_label('Swipe me'); ?>
     </p>
@@ -131,8 +131,8 @@ EOT;
     <p>as well as a right label</p>
 
     <p>
-      <pre><code class="language-php">echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-3' )->right_label( 'Swipe me' ); </code></pre>
-      <?php echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
+      <pre><code class="language-php">echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-3' )->right_label( 'Swipe me' ); </code></pre>
+      <?php echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
         'test-switch-3'
       )->right_label('Swipe me'); ?>
     </p>
@@ -141,8 +141,8 @@ EOT;
     <p>Of course, you may use both left and right <code class="language- inline">label</code></p>
 
     <p>
-      <pre><code class="language-php">echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-4' )->left_label( 'Swipe me' ) ->right_label( 'Swipe me' );</code></pre>
-      <?php echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
+      <pre><code class="language-php">echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-4' )->left_label( 'Swipe me' ) ->right_label( 'Swipe me' );</code></pre>
+      <?php echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
         'test-switch-4'
       )
         ->left_label('Swipe me')
@@ -151,11 +151,11 @@ EOT;
 
     <p>You may preselect the default status by <code class="language- inline">checked</code></p>
 
-    <pre><code class="language-php">echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-5' )->left_label( 'Swipe me' ) ->checked( true );</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-5' )->left_label( 'Swipe me' ) ->checked( true );</code></pre>
 
     <div>
       <form method="post" action="">
-        <?php echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
+        <?php echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
           'test-switch-5'
         )
           ->left_label('Swipe me')
@@ -178,10 +178,10 @@ EOT;
 
     <p>as well as the <code class="language- inline">disabled</code> of the component</p>
 
-    <pre><code class="language-php">echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-6' )->left_label( 'Swipe me' ) ->disabled( true );</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-6' )->left_label( 'Swipe me' ) ->disabled( true );</code></pre>
 
     <p>
-      <?php echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
+      <?php echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
         'test-switch-6'
       )
         ->left_label('Swipe me')
@@ -190,20 +190,20 @@ EOT;
 
     <p>You may change the appearance by <code class="language- inline">theme</code></p>
 
-    <pre><code class="language-php">echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-7' )->theme( 'flat-square' );</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-7' )->theme( 'flat-square' );</code></pre>
 
     <p>
-      <?php echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
+      <?php echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
         'test-switch-7'
       )->theme('flat-square'); ?>
     </p>
 
     <p>Mode <code class="language- inline">select</code> (default is <code class="language- inline">switch</code>)</p>
 
-    <pre><code class="language-php">echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-8' ) ->left_label( 'Turn left' ) ->right_label( 'Turn right' ) ->mode( 'select' );</code></pre>
+    <pre><code class="language-php">echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name( 'test-switch-8' ) ->left_label( 'Turn left' ) ->right_label( 'Turn right' ) ->mode( 'select' );</code></pre>
 
     <p>
-      <?php echo WPKirk\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
+      <?php echo BalazsKirkUpdate\PureCSSSwitch\Html\HtmlTagSwitchButton::name(
         'test-switch-8'
       )
         ->left_label('Turn left')

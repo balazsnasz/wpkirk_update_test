@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\Http\Controllers;
+namespace BalazsKirkUpdate\Http\Controllers;
 
-use WPKirk\WPTables\Html\WPTable;
+use BalazsKirkUpdate\WPTables\Html\WPTable;
 
 class ExampleTableController extends Controller
 {
@@ -15,7 +15,7 @@ class ExampleTableController extends Controller
   {
     $table = new ExampleTable();
 
-    return WPKirk()->view('dashboard.table')->with('table', $table);
+    return BalazsKirkUpdate()->view('dashboard.table')->with('table', $table);
   }
 
   public function loadFluentExample()
@@ -48,7 +48,7 @@ class ExampleTableController extends Controller
       ])
       ->setItems($items);
 
-    return WPKirk()->view('dashboard.table')->with('table', $table);
+    return BalazsKirkUpdate()->view('dashboard.table')->with('table', $table);
   }
 
   public function loadSearchExample()
@@ -60,6 +60,6 @@ class ExampleTableController extends Controller
   {
     $table = new SearchTable();
 
-    return WPKirk()->view('dashboard.table')->with('table', $table);
+    return BalazsKirkUpdate()->view('dashboard.table')->with('table', $table);
   }
 }

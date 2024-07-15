@@ -1,6 +1,6 @@
 <?php
 
-namespace WPKirk\API;
+namespace BalazsKirkUpdate\API;
 
 if (!defined('ABSPATH')) {
   exit();
@@ -9,9 +9,9 @@ if (!defined('ABSPATH')) {
 use WP_Error;
 use WP_REST_Request;
 use WP_REST_Response;
-use WPKirk\WPBones\Routing\API\RestController;
+use BalazsKirkUpdate\WPBones\Routing\API\RestController;
 
-class WPKirkV1Controller extends RestController
+class BalazsKirkUpdateV1Controller extends RestController
 {
   public function version(): WP_Error|WP_REST_Response
   {

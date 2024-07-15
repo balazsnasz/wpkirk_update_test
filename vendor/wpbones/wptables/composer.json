@@ -1,0 +1,29 @@
+{
+  "name": "wpbones/wptables",
+  "homepage": "https://github.com/wpbones/wptables",
+  "license": "MIT",
+  "type": "library",
+  "description": "A fluent implementation of WordPress WP List Table for WP Bones",
+  "keywords": [
+    "WP Table",
+    "WP Bones"
+  ],
+  "authors": [
+    {
+      "name": "Giovambattista Fazioli",
+      "email": "giovambattista.fazioli@gmail.com",
+      "homepage": "http://wpbones.wordpress.com"
+    }
+  ],
+  "support": {
+    "email": "giovambattista.fazioli@gmail.com",
+    "issues": "https://github.com/wpbones/wptables/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "BalazsKirkUpdate\\WPTables\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

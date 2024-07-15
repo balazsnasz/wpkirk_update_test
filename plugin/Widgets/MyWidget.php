@@ -1,8 +1,8 @@
 <?php
 
-namespace WPKirk\Widgets;
+namespace BalazsKirkUpdate\Widgets;
 
-use WPKirk\WPBones\Support\Widget;
+use BalazsKirkUpdate\WPBones\Support\Widget;
 
 class MyWidget extends Widget
 {
@@ -55,7 +55,7 @@ class MyWidget extends Widget
   {
     $instance = array_merge($this->defaults(), $instance);
 
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('widgets.form')
       ->with(['instance' => $instance, 'widget' => $this]);
   }
@@ -72,9 +72,9 @@ class MyWidget extends Widget
 
   public function viewWidget($args, $instance)
   {
-    return WPKirk()
+    return BalazsKirkUpdate()
       ->view('widgets.index')
       ->with(['args' => $args, 'instance' => $instance])
-      ->withStyles('wp-kirk-widget');
+      ->withStyles('balazs-kirk-update-test-widget');
   }
 }

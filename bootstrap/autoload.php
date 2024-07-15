@@ -27,25 +27,25 @@ require_once __DIR__ . '/../vendor/autoload.php';
 |
 */
 
-final class WPKirk
+final class BalazsKirkUpdate
 {
-    public const TEXTDOMAIN = 'wp-kirk';
+    public const TEXTDOMAIN = 'balazs-kirk-update-test';
     public static $plugin;
     public static $start;
 }
 
-WPKirk::$plugin = require_once __DIR__ . '/plugin.php';
-WPKirk::$start = microtime(true);
+BalazsKirkUpdate::$plugin = require_once __DIR__ . '/plugin.php';
+BalazsKirkUpdate::$start = microtime(true);
 
 // Commodity function to get the plugin instance
-if (! function_exists('WPKirk')) {
+if (! function_exists('BalazsKirkUpdate')) {
     /**
      * Return the instance of plugin.
      *
      * @return Plugin
      */
-    function WPKirk()
+    function BalazsKirkUpdate()
     {
-        return WPKirk::$plugin;
+        return BalazsKirkUpdate::$plugin;
     }
 }
