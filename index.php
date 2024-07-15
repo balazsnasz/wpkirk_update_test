@@ -4,7 +4,7 @@
  * Plugin Name: Balazs Kirk Update Test
  * Plugin URI: https://github.com/wpbones/BalazsKirkUpdate
  * Description: WP Bones template WordPress plugin
- * Version: 1.4.11
+ * Version: 2.0
  * Author: Giovambattista Fazioli
  * Author URI: http://undolog.com
  * Text Domain: balazs-kirk-update-test
