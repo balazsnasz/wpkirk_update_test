@@ -449,6 +449,7 @@ class Plugin extends Container implements PluginContract
   public function upgrader_post_install($response, $hook_extra, $result)
   {
     //Array ( [plugin] => wpkirk_update_test/index.php [temp_backup] => Array ( [slug] => wpkirk_update_test [src] => D:\laragon\www\wordpress/wp-content/plugins [dir] => plugins ) )
+    print_r($result);
     // Check if the installation type is for a plugin
     //if ($hook_extra['type'] == 'plugin') {
       // Check if the action is an update for a plugin
