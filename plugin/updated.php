@@ -17,7 +17,7 @@ $plugin_version = $plugin_data['Version'];
 $plugin_dir = $result['destination'];
 $updatedFile = fopen($plugin_dir . "/updated.txt", "a") or die("Unable to open file!");
 
-$updatedTxt = "Date: ";
+$updatedTxt = "Date updated: ";
 $updatedTxt .= date("Y-m-d H:i:s");
 $updatedTxt .= " - Version: ";
 $updatedTxt .= $plugin_version;
